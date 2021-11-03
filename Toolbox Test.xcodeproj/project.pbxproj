@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,15 @@
 		47FB7BD72731E44000937571 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47FB7BD52731E44000937571 /* Main.storyboard */; };
 		47FB7BD92731E44500937571 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47FB7BD82731E44500937571 /* Assets.xcassets */; };
 		47FB7BDC2731E44500937571 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47FB7BDA2731E44500937571 /* LaunchScreen.storyboard */; };
+		47FB7BE62731EDA900937571 /* NetworkingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FB7BE52731EDA900937571 /* NetworkingData.swift */; };
+		47FB7BE82731EE8100937571 /* LoginData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FB7BE72731EE8100937571 /* LoginData.swift */; };
+		47FB7BEA2731EE9000937571 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FB7BE92731EE9000937571 /* LoginService.swift */; };
+		47FB7BEF2732146A00937571 /* CarruselData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FB7BEE2732146A00937571 /* CarruselData.swift */; };
+		47FB7BF12732147500937571 /* CarruselService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FB7BF02732147500937571 /* CarruselService.swift */; };
+		47FB7BF427321FFA00937571 /* CarruselCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FB7BF327321FFA00937571 /* CarruselCell.swift */; };
+		47FB7BFA2732578F00937571 /* CarruselesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FB7BF92732578F00937571 /* CarruselesViewController.swift */; };
+		47FB7BFD2732744000937571 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 47FB7BFC2732744000937571 /* Kingfisher */; };
+		47FB7BFF27331D7E00937571 /* Carruseles2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FB7BFE27331D7E00937571 /* Carruseles2ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +33,14 @@
 		47FB7BD82731E44500937571 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		47FB7BDB2731E44500937571 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		47FB7BDD2731E44500937571 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47FB7BE52731EDA900937571 /* NetworkingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingData.swift; sourceTree = "<group>"; };
+		47FB7BE72731EE8100937571 /* LoginData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginData.swift; sourceTree = "<group>"; };
+		47FB7BE92731EE9000937571 /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
+		47FB7BEE2732146A00937571 /* CarruselData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarruselData.swift; sourceTree = "<group>"; };
+		47FB7BF02732147500937571 /* CarruselService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarruselService.swift; sourceTree = "<group>"; };
+		47FB7BF327321FFA00937571 /* CarruselCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarruselCell.swift; sourceTree = "<group>"; };
+		47FB7BF92732578F00937571 /* CarruselesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarruselesViewController.swift; sourceTree = "<group>"; };
+		47FB7BFE27331D7E00937571 /* Carruseles2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Carruseles2ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47FB7BFD2732744000937571 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,13 +76,69 @@
 			children = (
 				47FB7BCF2731E44000937571 /* AppDelegate.swift */,
 				47FB7BD12731E44000937571 /* SceneDelegate.swift */,
-				47FB7BD32731E44000937571 /* ViewController.swift */,
-				47FB7BD52731E44000937571 /* Main.storyboard */,
+				47FB7C012733271300937571 /* Storyboards */,
+				47FB7C00273326FC00937571 /* Controller */,
+				47FB7BF227321FB100937571 /* View */,
+				47FB7BE32731ED7700937571 /* Model */,
 				47FB7BD82731E44500937571 /* Assets.xcassets */,
-				47FB7BDA2731E44500937571 /* LaunchScreen.storyboard */,
 				47FB7BDD2731E44500937571 /* Info.plist */,
 			);
 			path = "Toolbox Test";
+			sourceTree = "<group>";
+		};
+		47FB7BE32731ED7700937571 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				47FB7BED2732081300937571 /* Carrusel */,
+				47FB7BE42731ED8800937571 /* Login */,
+				47FB7BE52731EDA900937571 /* NetworkingData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		47FB7BE42731ED8800937571 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				47FB7BE72731EE8100937571 /* LoginData.swift */,
+				47FB7BE92731EE9000937571 /* LoginService.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		47FB7BED2732081300937571 /* Carrusel */ = {
+			isa = PBXGroup;
+			children = (
+				47FB7BEE2732146A00937571 /* CarruselData.swift */,
+				47FB7BF02732147500937571 /* CarruselService.swift */,
+			);
+			path = Carrusel;
+			sourceTree = "<group>";
+		};
+		47FB7BF227321FB100937571 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				47FB7BF327321FFA00937571 /* CarruselCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		47FB7C00273326FC00937571 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				47FB7BD32731E44000937571 /* ViewController.swift */,
+				47FB7BF92732578F00937571 /* CarruselesViewController.swift */,
+				47FB7BFE27331D7E00937571 /* Carruseles2ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		47FB7C012733271300937571 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				47FB7BD52731E44000937571 /* Main.storyboard */,
+				47FB7BDA2731E44500937571 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +157,9 @@
 			dependencies = (
 			);
 			name = "Toolbox Test";
+			packageProductDependencies = (
+				47FB7BFC2732744000937571 /* Kingfisher */,
+			);
 			productName = "Toolbox Test";
 			productReference = 47FB7BCC2731E44000937571 /* Toolbox Test.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +187,9 @@
 				Base,
 			);
 			mainGroup = 47FB7BC32731E44000937571;
+			packageReferences = (
+				47FB7BFB2732744000937571 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 47FB7BCD2731E44000937571 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,9 +217,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47FB7BEF2732146A00937571 /* CarruselData.swift in Sources */,
+				47FB7BF427321FFA00937571 /* CarruselCell.swift in Sources */,
 				47FB7BD42731E44000937571 /* ViewController.swift in Sources */,
+				47FB7BEA2731EE9000937571 /* LoginService.swift in Sources */,
+				47FB7BE82731EE8100937571 /* LoginData.swift in Sources */,
+				47FB7BFF27331D7E00937571 /* Carruseles2ViewController.swift in Sources */,
+				47FB7BF12732147500937571 /* CarruselService.swift in Sources */,
+				47FB7BE62731EDA900937571 /* NetworkingData.swift in Sources */,
 				47FB7BD02731E44000937571 /* AppDelegate.swift in Sources */,
 				47FB7BD22731E44000937571 /* SceneDelegate.swift in Sources */,
+				47FB7BFA2732578F00937571 /* CarruselesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +429,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		47FB7BFB2732744000937571 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		47FB7BFC2732744000937571 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 47FB7BFB2732744000937571 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 47FB7BC42731E44000937571 /* Project object */;
 }
